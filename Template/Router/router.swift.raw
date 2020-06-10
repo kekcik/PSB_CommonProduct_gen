@@ -1,0 +1,10 @@
+{{ header }}
+
+final class {{ ModuleName }}Router: NSObject {
+	weak var transitionHandler: UIViewController?
+}
+
+// MARK: - {{ ModuleName }}RouterInput
+extension {{ ModuleName }}Router: {{ ModuleName }}RouterInput {
+  
+}

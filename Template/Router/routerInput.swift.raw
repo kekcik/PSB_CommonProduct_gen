@@ -1,0 +1,5 @@
+{{ header }}
+
+protocol {{ ModuleName }}RouterInput: class {
+    var transitionHandler: UIViewController? { get set }
+}

@@ -1,0 +1,34 @@
+{{ header }}
+
+final class {{ ModuleName }}Presenter: NSObject {
+    
+    enum CellName {
+        case none
+    }
+    
+    struct CommonCellName: CPCommonCellNameProtocol {
+        var name: CellName = .none
+    }
+    
+    weak var view: (CPViewProtocol)?
+    
+    var section = [CPCommonCellVMProtocol]()
+}
+
+// MARK: - {{ ModuleName }}PresenterInput
+
+extension {{ ModuleName }}Presenter: {{ ModuleName }}PresenterInput {
+
+    func update(dataSource: {{ ModuleName }}DataSource) {
+        section.removeAll()
+        section.append(CPTitleCellVM(titleText: dataSource.name))
+        
+        view?.update(with: [section], mode: .fullReload)
+        view?.update(titles: ("Заголовок", nil))
+    }
+    
+    func showError(error: Error) {
+        view?.showError(error: error)
+    }
+
+}

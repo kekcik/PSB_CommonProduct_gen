@@ -1,0 +1,33 @@
+{{ header }}
+
+final class {{ ModuleName }}Interactor: NSObject {
+
+    // MARK: - Varibles
+
+    var presenter: {{ ModuleName }}PresenterInput?
+    var router: {{ ModuleName }}RouterInput?
+
+}
+
+// MARK: - CPInteractorProtocol
+extension {{ ModuleName }}Interactor: CPInteractorProtocol {
+
+    func viewIsReady() {
+        let dataSource = {{ ModuleName }}DataSource(name: "Генерация – хорошо")
+        presenter?.update(dataSource: dataSource)
+    }
+
+    func updateData() { 
+        // Вызывается при pull to refresh
+    }
+
+    func selected(at name: CPCommonCellNameProtocol) {
+        // Вызывается при нажатии на ячейкц
+    }
+    
+}
+
+// MARK: - {{ ModuleName }}InteractorInput
+extension {{ ModuleName }}Interactor: {{ ModuleName }}InteractorInput {
+    // Добавь сюда кастомные действия, которых нет в CPInteractorProtocol
+}

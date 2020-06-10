@@ -1,0 +1,12 @@
+{{ header }}
+
+final class {{ ModuleName }}ViewController: CPViewController {
+    
+    // Раскоментирую, если нужно убрать pull to refresh 
+
+    // override func viewDidLoad() {
+    //     super.viewDidLoad()
+    //     tableView.refreshControl = nil
+    // }
+
+}

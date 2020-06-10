@@ -1,0 +1,23 @@
+{{ header }}
+
+class {{ ModuleName }}Module {
+    
+    static func build() -> {{ ModuleName }}ViewController {
+        
+        let viewController = {{ ModuleName }}ViewController()
+
+        let router = {{ ModuleName }}Router()
+        router.transitionHandler = viewController
+
+        let presenter = {{ ModuleName }}Presenter()
+        presenter.view = viewController
+
+        let interactor = {{ ModuleName }}Interactor()
+        interactor.presenter = presenter
+        interactor.router = router
+
+        viewController.interactor = interactor
+                                           
+        return viewController
+    }
+}

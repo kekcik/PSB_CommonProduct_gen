@@ -1,0 +1,5 @@
+{{ header }}
+
+protocol {{ ModuleName }}InteractorInput {
+
+}
