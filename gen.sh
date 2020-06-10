@@ -6,6 +6,8 @@ wait
 node main.js
 wait
 cd ..
-rm -rf Result
-cp -R PSB_CommonProduct_gen/Result/. .
+rm -rf CPResult
+mkdir CPResult
+cp -R PSB_CommonProduct_gen/Result/. CPResult/.
 rm -rf PSB_CommonProduct_gen
+open CPResult

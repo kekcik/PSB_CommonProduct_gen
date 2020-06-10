@@ -61,5 +61,5 @@ var runRename = function(filePaths) {
             if ( err ) console.log('ERROR: ' + err);
         });
     })
-    console.log(`Модуль ${moduleName} создан. Скопируй его из Result/${moduleName} в проект и добавь в два таргета`);
+    console.log(`Модуль ${moduleName} создан. Скопируй его из CPResult/${moduleName} в проект и добавь в два таргета`);
 }
