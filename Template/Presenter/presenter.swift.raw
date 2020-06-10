@@ -16,7 +16,6 @@ final class {{ ModuleName }}Presenter: NSObject {
 }
 
 // MARK: - {{ ModuleName }}PresenterInput
-
 extension {{ ModuleName }}Presenter: {{ ModuleName }}PresenterInput {
 
     func update(dataSource: {{ ModuleName }}DataSource) {
@@ -25,10 +24,6 @@ extension {{ ModuleName }}Presenter: {{ ModuleName }}PresenterInput {
         
         view?.update(with: [section], mode: .fullReload)
         view?.update(titles: ("Заголовок", nil))
-    }
-    
-    func showError(error: Error) {
-        view?.showError(error: error)
     }
 
 }
