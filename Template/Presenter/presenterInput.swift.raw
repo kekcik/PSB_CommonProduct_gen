@@ -2,5 +2,4 @@
 
 protocol {{ ModuleName }}PresenterInput: class {
     func update(dataSource: {{ ModuleName }}DataSource)
-    func showError(error: Error)
 }
