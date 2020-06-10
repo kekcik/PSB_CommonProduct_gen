@@ -7,6 +7,5 @@ node main.js
 wait
 cd ..
 rm -rf Result
-cp -R PSB_CommonProduct_gen/. .
+cp -R PSB_CommonProduct_gen/Result/. .
 rm -rf PSB_CommonProduct_gen
-open Result
