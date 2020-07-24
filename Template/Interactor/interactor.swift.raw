@@ -1,6 +1,10 @@
 {{ header }}
 
-final class {{ ModuleName }}Interactor: NSObject {
+protocol {{ ModuleName }}InteractorInput {
+
+}
+
+final class {{ ModuleName }}Interactor {
 
     // MARK: - Varibles
 

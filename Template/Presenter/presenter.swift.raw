@@ -1,6 +1,10 @@
 {{ header }}
 
-final class {{ ModuleName }}Presenter: NSObject {
+protocol {{ ModuleName }}PresenterInput {
+    func update(dataSource: {{ ModuleName }}DataSource)
+}
+
+final class {{ ModuleName }}Presenter {
     
     enum CellName {
         case none

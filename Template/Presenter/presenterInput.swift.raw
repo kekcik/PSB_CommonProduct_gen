@@ -1,5 +1,0 @@
-{{ header }}
-
-protocol {{ ModuleName }}PresenterInput: class {
-    func update(dataSource: {{ ModuleName }}DataSource)
-}

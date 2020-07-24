@@ -20,9 +20,7 @@ var getHeader = function() {
 //
 //  Created by ${userName} on ${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}.
 //  Copyright © ${new Date().getFullYear()} psb. All rights reserved.
-//
-
-import Foundation`
+//`
 }
 
 rl.question("Имя разработчика (например, Vasya Vasechkin): ", function(answer) {

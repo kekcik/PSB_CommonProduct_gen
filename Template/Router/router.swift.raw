@@ -1,6 +1,10 @@
 {{ header }}
 
-final class {{ ModuleName }}Router: NSObject {
+protocol {{ ModuleName }}RouterInput {
+    var transitionHandler: UIViewController? { get set }
+}
+
+final class {{ ModuleName }}Router {
 	weak var transitionHandler: UIViewController?
 }
 
